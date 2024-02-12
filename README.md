@@ -52,3 +52,24 @@ yy_architecture.start_conversation(conversation_id, student_id)
 yy_architecture.process_message(conversation_id, "What is the essence of Zen?")
 Contributing
 We welcome contributions and suggestions to improve the Yin-Yang Conversational Architecture. Please follow the contribution guidelines in CONTRIBUTING.md.
+
+
+# Relationship Health Bot Using Yin-Yang Conversational Architecture
+
+## Introduction
+This bot utilizes the Yin-Yang Conversational Architecture, combining real-time conversational capabilities with deep analysis to guide users in improving their relationship health.
+
+## Setup
+```bash
+pip install your_package_name
+
+from your_package import RelationshipBot
+
+bot = RelationshipBot(model="gpt-4")  # Initialize the bot with GPT-4 or any LLM of your choice.
+
+conversation_id = "unique_conversation_id"
+user_id = "unique_user_id"
+
+message = "We need to talk about our vacation plans."
+bot_response = bot.process_message(conversation_id, user_id, message)
+print(bot_response)
